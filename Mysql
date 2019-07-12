@@ -1,0 +1,8 @@
+select  age,
+        gender,
+from table1
+# 错误，最后一个参数不要带‘，’
+select  age,
+        gender
+from table1
+
