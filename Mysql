@@ -1,3 +1,4 @@
+20190712
 select  age,
         gender,
 from table1
@@ -6,3 +7,14 @@ select  age,
         gender
 from table1
 
+20190713
+今年花了两个小时左右查清楚了下面hive-sql两个函数
+select 
+      entityid entry_id, 
+      concat_ws(
+        ',', 
+        collect_set(name)
+      ) entry_tags 
+    from..
+
+collect_set是把同一用户具有不同的标签，把他们聚合到一起、且去重
